@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp" android:fitsSystemWindows="true">
+
+    <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingBottom="16dp" android:text="Add ingredient" android:textSize="22sp" android:textStyle="bold" />
+
+    <EditText android:id="@+id/input_name" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Ingredient name" android:inputType="textCapWords" />
+
+    <EditText android:id="@+id/input_quantity" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Quantity" android:inputType="numberDecimal" />
+
+    <Spinner android:id="@+id/spinner_unit" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <EditText android:id="@+id/input_expiry" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Expiry date (yyyy-MM-dd, optional)" android:inputType="date" />
+
+    <Button android:id="@+id/button_save" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:text="Save" />
+</LinearLayout>
